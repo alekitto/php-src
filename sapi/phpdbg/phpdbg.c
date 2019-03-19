@@ -128,7 +128,7 @@ static void php_phpdbg_destroy_registered(zval *data) /* {{{ */
 static void php_phpdbg_destroy_file_source(zval *data) /* {{{ */
 {
 	phpdbg_file_source *source = (phpdbg_file_source *) Z_PTR_P(data);
-	destroy_op_array(&source->op_array);
+//	destroy_op_array(&source->op_array);
 	if (source->buf) {
 		efree(source->buf);
 	}
